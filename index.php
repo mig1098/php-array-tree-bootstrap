@@ -1,3 +1,4 @@
+ <link rel="" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <style type="text/css">
     #mg-multisidetabs .list-group-item:first-child {
         border-top-left-radius: 0;
