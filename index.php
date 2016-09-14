@@ -1,6 +1,3 @@
-    
-    <div class="panel-body">
-    
     <style type="text/css">
     #mg-multisidetabs .list-group-item:first-child {
         border-top-left-radius: 0;
@@ -40,90 +37,7 @@
         margin-left:30px;
     }
     </style>
-    <?php if(false){ ?>
-          <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
-             <div class="panel panel-default">
-                <div class="panel-body">
-                  <div class="slide-container">
-                    <div class="list-group" id="mg-multisidetabs-2">
-                      <a href="#" class="list-group-item"><span>Category</span><span class="glyphicon glyphicon-menu-right mg-icon pull-right"></span></a>
-                      <div class="panel list-sub">
-                        <div class="panel-body">
-                          <div class="list-group">
-                            <a href="#" class="list-group-item"><span class="mg-space-1"></span><span>Men</span><span class="glyphicon glyphicon-menu-right mg-icon pull-right"></span></a>
-                            <div class="panel list-sub">
-                              <div class="panel-body">
-                                <div class="list-group">
-                                  <a href="#" class="list-group-item"><span class="mg-space-2"></span>Button Ups<span class="glyphicon glyphicon-menu-right mg-icon pull-right"></span></a>
-                                  <div class="panel list-sub">
-                                    <div class="panel-body">
-                                      <a href="#" class="list-group-item"><span class="mg-space-3"></span>Long Sleeve</a>
-                                      <a href="#" class="list-group-item"><span class="mg-space-3"></span>Short Sleeve</a>
-                                      <a href="#" class="list-group-item"><span class="mg-space-3"></span>Cutoff Sleeve</a>
-                                    </div>
-                                  </div>
-                                  <a href="#" class="list-group-item"><span class="mg-space-2"></span>Sweater</a>
-                                  <a href="#" class="list-group-item"><span class="mg-space-2"></span>Suitings</a>
-                                  <a href="#" class="list-group-item"><span class="mg-space-2"></span>Pants</a>
-                                  <a href="#" class="list-group-item"><span class="mg-space-2"></span>Jackets<span class="glyphicon glyphicon-menu-right mg-icon pull-right"></span></a>
-                                  <div class="panel list-sub">
-                                    <div class="panel-body">
-                                      <a href="#" class="list-group-item"><span class="mg-space-3"></span>Leather</a>
-                                      <a href="#" class="list-group-item"><span class="mg-space-3"></span>Leather Biker Jacket</a>
-                                      <a href="#" class="list-group-item"><span class="mg-space-3"></span>Hoodies</a>
-                                      <a href="#" class="list-group-item"><span class="mg-space-3"></span>Sweatshirt</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <a href="#" class="list-group-item"><span class="mg-space-1"></span>Women<span class="glyphicon glyphicon-menu-right mg-icon pull-right"></span></a>
-                            <div class="panel list-sub">
-                              <div class="panel-body">
-                                <div class="list-group">
-                                  <a href="#" class="list-group-item"><span class="mg-space-2"></span>Women Dapibus 1</a>
-                                  <a href="#" class="list-group-item"><span class="mg-space-2"></span>Women Morbi 2</a>
-                                  <a href="#" class="list-group-item"><span class="mg-space-2"></span>Women Porta 3</a>
-                                  <a href="#" class="list-group-item"><span class="mg-space-2"></span>Women Vestibulum 4</a>
-                                </div>
-                              </div>
-                            </div>
-                            <a href="#" class="list-group-item"><span class="mg-space-1"></span>Handbags<span class="glyphicon glyphicon-menu-right mg-icon pull-right"></span></a>
-                            <div class="panel list-sub">
-                              <div class="panel-body">
-                                <div class="list-group">
-                                  <a href="#" class="list-group-item"><span class="mg-space-2"></span>Handbags Dapibus 1</a>
-                                  <a href="#" class="list-group-item"><span class="mg-space-2"></span>Handbags Morbi 2</a>
-                                  <a href="#" class="list-group-item"><span class="mg-space-2"></span>Handbags Porta 3</a>
-                                  <a href="#" class="list-group-item"><span class="mg-space-2"></span>Handbags Vestibulum 4</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="#" class="list-group-item"><span>Condition</span><span class="glyphicon glyphicon-menu-right mg-icon pull-right"></span></a>
-                      <div class="panel list-sub">
-                        <div class="panel-body">
-                          <div class="list-group">
-                            <a href="#" class="list-group-item">Handbags Dapibus 1</a>
-                            <a href="#" class="list-group-item">Handbags Morbi 2</a>
-                            <a href="#" class="list-group-item">Handbags Porta 3</a>
-                            <a href="#" class="list-group-item">Handbags Vestibulum 4</a>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="#" class="list-group-item"><span>Size</span></a>
-                      <a href="#" class="list-group-item"><span>Brand</span></a>
-                      <a href="#" class="list-group-item"><span>Pricing</span></a>
-                    </div><!-- ./ end list-group -->
-                  </div><!-- ./ end slide-container -->
-                </div><!-- ./ end panel-body -->
-              </div><!-- ./ end panel panel-default-->
-            </div><!-- ./ endcol-lg-6 col-lg-offset-3 -->
-          </div><!-- ./ end row -->
-        <?php } ?>  
+<div class="row">
 <?php
 function buildtree(&$result,$dropdown,$space='',$callback=null){
     $drop = false;
@@ -187,6 +101,7 @@ buildtree($result,$dropdowns,$space,function($item,$childexist,$space){
   </div><!-- ./ end panel panel-default-->
 </div><!-- ./ endcol-lg-6 col-lg-offset-3 -->
 </div><!-- ./ end row -->
+
 </div>
           <script type="text/javascript">
           $(document).ready(function(){
@@ -245,4 +160,3 @@ buildtree($result,$dropdowns,$space,function($item,$childexist,$space){
             
           })
           </script>
-    </div><!-- ./ end panel-body -->  
