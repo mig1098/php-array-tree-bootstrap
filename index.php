@@ -1,4 +1,16 @@
- <link rel="" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="mig.inc" />
+
+	<title>tree</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+
     <style type="text/css">
     #mg-multisidetabs .list-group-item:first-child {
         border-top-left-radius: 0;
@@ -38,7 +50,10 @@
         margin-left:30px;
     }
     </style>
-<div class="row">
+<div class="container">
+<div class="panel panel-default">
+<div class="panel-body">
+
 <?php
 function buildtree(&$result,$dropdown,$space='',$callback=null){
     $drop = false;
@@ -91,7 +106,7 @@ buildtree($result,$dropdowns,$space,function($item,$childexist,$space){
 ?>
 <div class="row">
 <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
- <div class="panel panel-default">
+ <div class="panel">
     <div class="panel-body">
       <div class="slide-container">
         <div class="list-group" id="mg-multisidetabs">
@@ -103,6 +118,9 @@ buildtree($result,$dropdowns,$space,function($item,$childexist,$space){
 </div><!-- ./ endcol-lg-6 col-lg-offset-3 -->
 </div><!-- ./ end row -->
 
+
+</div>
+</div>
 </div>
           <script type="text/javascript">
           $(document).ready(function(){
@@ -161,3 +179,5 @@ buildtree($result,$dropdowns,$space,function($item,$childexist,$space){
             
           })
           </script>
+</body>
+</html>
