@@ -55,7 +55,7 @@
 <div class="panel-body">
 
 <?php
-function buildtree(&$result,$dropdown,$space='',$callback=null){
+function mgbuildtree(&$result,$dropdown,$space='',$callback=null){
     $drop = false;
     if(!is_array($dropdown) || count($dropdown) < 1 ){ return false; }
     $i = 0;
@@ -74,7 +74,7 @@ function buildtree(&$result,$dropdown,$space='',$callback=null){
                           <div class="list-group">';
         }
         if(is_array($dropdown[$key])){
-            buildtree($result,$dropdown[$key],$space,$callback);
+            mgbuildtree($result,$dropdown[$key],$space,$callback);
         }
         if($childexist){//exist child array
             $result .= '</div>
@@ -98,7 +98,7 @@ $dropdowns = array(
 );
 $result = '';
 $space = '&nbsp;';
-buildtree($result,$dropdowns,$space,function($item,$childexist,$space){
+mgbuildtree($result,$dropdowns,$space,function($item,$childexist,$space){
     return '<a href="#" class="list-group-item"><span>'.$space.$item.'</span>'.
     ( $childexist ? '<span class="glyphicon glyphicon-menu-right mg-icon pull-right"></span>' : '' ).
     '</a>';
